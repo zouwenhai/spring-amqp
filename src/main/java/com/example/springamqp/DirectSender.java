@@ -20,7 +20,7 @@ public class DirectSender {
             Channel channel = connection.createChannel();
             String message = "this is a direct message";
             //send message to rabbit exchange
-            channel.basicPublish(EXCHANGE_NAME, "direct_routing_key", null, ("message2:"+message).getBytes());
+            channel.basicPublish(EXCHANGE_NAME, "direct_routing_key", null, message.getBytes());
             channel.close();
             factory.clone();
         }

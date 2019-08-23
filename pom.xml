@@ -28,6 +28,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<!--		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>5.1.9.RELEASE</version>
+		</dependency>-->
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -48,5 +54,30 @@
 			</plugin>
 		</plugins>
 	</build>
+
+<!--	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<activatedProperties>dev</activatedProperties>
+			</properties>
+			&lt;!&ndash; 这里代表默认使用dev环境配置文件 &ndash;&gt;
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<activatedProperties>test</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<activatedProperties>prod</activatedProperties>
+			</properties>
+		</profile>
+	</profiles>-->
 
 </project>
