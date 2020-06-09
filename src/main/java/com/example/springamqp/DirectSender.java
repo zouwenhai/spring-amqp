@@ -23,6 +23,8 @@ public class DirectSender {
             channel.basicPublish(EXCHANGE_NAME, "direct_routing_key", null, message.getBytes());
             channel.close();
             factory.clone();
+
+
         }
 
 }
